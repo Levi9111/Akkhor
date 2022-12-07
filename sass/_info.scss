@@ -1,0 +1,220 @@
+.info {
+  grid-column: 2/-1;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  // grid-template-rows: repeat(auto-fit, minmax(min-content, max-content));
+  grid-gap: $grid-gap;
+  padding: $container-padding;
+  & > * {
+    padding: $container-padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    background-color: $color-background-child;
+  }
+
+  &--events {
+  }
+
+  &--students {
+    &-number {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+    &-female {
+      .border-top {
+        background-color: $color-tab-blue;
+      }
+    }
+    &-male {
+      .border-top {
+        background-color: $color-nav-left1;
+      }
+    }
+    .border {
+      height: 5rem;
+      width: 0.5px;
+      background-color: $color-grey-light-2;
+      opacity: 0.4;
+      padding-bottom: 6rem;
+    }
+
+    .border-top {
+      display: block;
+      height: 0.6rem;
+      width: 5rem;
+      border-radius: 100vw;
+      margin-bottom: 1.3rem;
+    }
+    h3 {
+      color: $color-grey-light-2;
+    }
+    .qty {
+      font-weight: 900;
+      font-size: 1.7rem;
+    }
+  }
+
+  /////Information ablut traffic
+  &--traffic {
+    &-visitors {
+      font-size: 1.5rem;
+      color: $color-grey-light-2;
+    }
+    &-numbers {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    ///Website traffic bar
+    &-bar {
+      display: flex;
+      padding: 2.5rem 0;
+      & > * {
+        min-height: 0.8rem;
+      }
+      .direct {
+        background-color: $color-notifications;
+        max-width: 50%;
+        flex: 0 0 50%;
+        border-radius: 2rem 0 0 2rem;
+      }
+    }
+    .search {
+      background-color: $color-tab-blue;
+      max-width: 27%;
+      flex: 0 0 27%;
+    }
+    .referrals {
+      background-color: rgb(255 234 0);
+      max-width: 12%;
+      flex: 0 0 12%;
+    }
+    .social {
+      background-color: $color-bell;
+      max-width: 6%;
+      flex: 0 0 6%;
+      border-radius: 0 2rem 2rem 0;
+    }
+  }
+  ///Website Traffic table
+  &--traffic-table {
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+      text-align: right;
+      border-bottom: 1px dotted $color-grey-light-2;
+    }
+    td {
+      // padding-right: 3rem;
+      padding: 1.5rem 5rem 1.5rem 0;
+    }
+    .td-head {
+      display: flex;
+      align-items: flex-start;
+      h6 {
+        padding-left: 1.3rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  ////////////////////////
+  //Notice Board
+  &--notice {
+    font-size: 1.5rem;
+    overflow: hidden;
+
+    & > *:not(:first-child) {
+      border-bottom: 2px dotted $color-grey-light-1;
+    }
+    &-commentbox {
+      padding: 2.5rem 0;
+      border-bottom: 1px dotted $color-grey-light-2;
+    }
+    &-date {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      font-size: 1.4rem;
+      // background-color: red;
+      border-radius: 3rem;
+      letter-spacing: 1px;
+    }
+    &-comment {
+      display: block;
+      text-decoration: none;
+      color: $color-fonts;
+      font-weight: 700;
+      padding-top: 1.1rem;
+    }
+    &-commenter {
+      p {
+        display: inline;
+        color: $color-grey-dark-1;
+        font-weight: 700;
+      }
+      span {
+        color: $color-grey-dark-2;
+      }
+    }
+
+    .date-1,
+    .date-4 {
+      background-color: $color-tab-blue;
+    }
+    .date-2,
+    .date-5 {
+      background-color: $color-nav-left2;
+    }
+    .date-3,
+    .date-6 {
+      background-color: $color-pink;
+    }
+  }
+}
+
+/////////////////////////////
+/// FOR SCROLLING..
+.for--scrollbar {
+  height: 70vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.bullet-direct {
+  background-color: $color-notifications;
+}
+
+.bullet-referrals {
+  background-color: $color-nav-left1;
+}
+
+.for--scrollbar::-webkit-scrollbar-track {
+  background: $color-tab-blue;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.for--scrollbar::-webkit-scrollbar-thumb {
+  background: $color-tab-blue;
+  // border: 0.25em solid hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+}
+
+.for--scrollbar::-webkit-scrollbar {
+  width: 1rem;
+  // height: 1em;
+}
+
+.for--scrollbar::-webkit-scrollbar-track {
+  background: $color-tab-blue;
+  background: $color-grey-light-1;
+  // border-radius: 100vw;
+  // margin-block: 0.5rem;
+}

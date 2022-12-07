@@ -1,0 +1,68 @@
+.description {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 0 $container-padding;
+  // background-color: #f0f1f3;
+
+  &--card {
+    padding: 2.2rem;
+    background-color: $color-background-child;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-students {
+      grid-row: 1/2;
+    }
+    &-teachers {
+      grid-row: 2/3;
+    }
+    &-parents {
+      grid-row: 3/4;
+    }
+    &-earnings {
+      grid-row: 4/5;
+    }
+
+    .icon {
+      //rgb(209 243 224), rgb(225 241 255),rgb(255 242 216),rgb(255 234 234);
+      height: 8rem;
+      width: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 4rem;
+      font-weight: 100;
+      // background-color: red;
+      color: green;
+      &--students {
+        background-color: rgb(209 243 224);
+        color: #3cb878;
+      }
+      &--teachers {
+        background-color: #e1f1ff;
+        color: #3f7afc;
+      }
+      &--parents {
+        background-color: #fff2d8;
+        color: #ffa001;
+      }
+      &--earnings {
+        background-color: #ffeaea;
+        color: #ff0000;
+      }
+    }
+  }
+  .head-flex {
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: 500;
+    color: $color-fonts;
+  }
+}

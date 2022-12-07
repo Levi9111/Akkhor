@@ -1,0 +1,62 @@
+.socialMeadia {
+  grid-column: 2/-1;
+  grid-row: 6/7;
+  padding: $container-padding;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: $grid-gap;
+  transition: all 0.3s;
+
+  & > * {
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &--facebook {
+    background-color: rgb(84 108 169);
+    &:hover {
+      background-color: rgb(84 100 139);
+    }
+  }
+  &--twitter {
+    background-color: rgb(69 160 240);
+    &:hover {
+      background-color: rgb(69 139 300);
+    }
+  }
+  &--gplus {
+    background-color: rgb(248 27 27);
+    &:hover {
+      background-color: rgb(248 27 47);
+    }
+  }
+  &--linkedin {
+    background-color: rgb(21 101 192);
+    &:hover {
+      background-color: rgb(21 99 162);
+    }
+  }
+
+  &--heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-background-child;
+    padding: 4rem;
+    transition: all 0.3s;
+
+    .fa-brands {
+      font-size: 2.4rem;
+    }
+  }
+  .numbers {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: $color-background-child;
+    font-weight: 400;
+    text-align: center;
+  }
+}

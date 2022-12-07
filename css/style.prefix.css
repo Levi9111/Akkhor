@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #6d5d4b;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvX2Jhc2Uuc2NzcyIsInN0eWxlLmNvbXAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVdBOzs7RUFHRSxTQUFBO0VBQ0EsVUFBQTtFQUNBLG1CQUFBO0FDVkY7O0FEYUE7RUFDRSxzQkFBQTtFQUNBLGdCQUFBO0FDVkY7O0FEYUE7RUFDRSx5QkFoQmtCO0VBaUJsQixnQkFBQTtFQUNBLGdCQUFBO0FDVkYiLCJmaWxlIjoic3R5bGUucHJlZml4LmNzcyJ9 */

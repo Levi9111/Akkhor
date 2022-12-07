@@ -1,0 +1,203 @@
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-color: $color-tab-bottom;
+  display: grid;
+  grid-template-rows: 7rem repeat(18, 5rem);
+  cursor: pointer;
+
+  /////////////////////////////////
+  /// Sidebar Header
+  &--header {
+    grid-column: 1/2;
+    // max-width: 28rem;
+    color: $color-background-child;
+    background: $color-nav-left1;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-text {
+      text-align: right;
+      display: inline-block;
+      font-weight: 900;
+      margin-left: -2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6rem;
+      ///////////////////////display: none;
+      span {
+        // transform: translateX(-20rem);
+        font-style: 1.2rem;
+        ////////////////////////display: none;
+      }
+      p {
+        font-size: 2.5rem;
+        ////////////////////display: none;
+      }
+    }
+
+    ///Header logo
+    &-logo {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+      background-color: $color-background-child;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      ////display: none;
+
+      svg {
+        height: 3rem;
+        width: 3rem;
+        // height: 4.5rem;
+        // height: 4.5rem;
+        transform: rotate(-35deg);
+      }
+    }
+  }
+  /////Sidebar Hamburger Menu
+  &--hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transition: all 0.3s;
+
+    & > * {
+      height: 3px;
+      background-color: $color-background-child;
+      margin: 2px;
+      border-radius: 100vw;
+      transition: all 0.3s;
+    }
+    .menu-1 {
+      width: 30px;
+      // transform: rotate(135deg) translateX(8px) translateY(1px);
+    }
+    .menu-2 {
+      width: 20px;
+      // opacity: 0;
+    }
+    .menu-3 {
+      width: 25px;
+      // width: 30px;
+      // transform: rotate(49deg) translateX(-11px);
+    }
+
+    ////class for js
+
+    .menu-1-js {
+      width: 30px;
+      transform: rotate(135deg) translateX(8px) translateY(1px);
+    }
+    .menu-2-js {
+      width: 20px;
+      opacity: 0;
+    }
+    .menu-3-js {
+      width: 30px;
+      transform: rotate(49deg) translateX(-11px);
+    }
+
+    &:hover {
+      .menu-1 {
+        width: 30px;
+      }
+      .menu-2 {
+        width: 30px;
+      }
+      .menu-3 {
+        width: 30px;
+      }
+    }
+  }
+}
+///////////////////////////////////////
+/// Hamburger Menu JS
+.sidebar--hamburger-js {
+}
+
+svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: $color-nav-left1;
+}
+
+h4 {
+  color: $color-sidebar-white;
+}
+
+/////////////////////////////////////////////
+// Other items
+.sidebar {
+  .div-svg {
+    // padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: 4rem 16rem 1fr;
+    grid-gap: 1.5rem;
+    border-bottom: 1px solid $color-text;
+    text-align: center;
+  }
+
+  h4 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: flex-start;
+    opacity: 0.6;
+    ///////////display: none;
+  }
+
+  svg {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: end;
+  }
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+    filter: invert(78%) sepia(47%) saturate(5753%) hue-rotate(358deg)
+      brightness(100%) contrast(106%);
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .fa-solid {
+    grid-row: 1/-1;
+    grid-column: 3/-1;
+    color: $color-sidebar-white;
+    align-self: center;
+    justify-self: start;
+    transition: all 0.3s;
+    ////// / display: none;
+    // &:hover {
+    //   transform: rotate(450deg);
+    //   color: $color-nav-left1;
+    // }
+  }
+}
+
+.sidebar--js {
+  .div--svg-js {
+    border-bottom: 1px solid $color-text;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    height: 1.8rem;
+    width: 1.8rem;
+    filter: invert(78%) sepia(47%) saturate(5753%) hue-rotate(358deg)
+      brightness(100%) contrast(106%);
+  }
+}
+
+.non-display {
+  display: none;
+}

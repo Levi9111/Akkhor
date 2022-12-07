@@ -1,0 +1,25 @@
+.dots {
+  transform: scale(4) translateY(-0.4rem) translateX(-0.3rem);
+  cursor: pointer;
+  color: $color-grey-light-2;
+}
+
+.bullets {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  border: 4px solid $color-background-child;
+  box-shadow: $box-shadow;
+  // background-color: green;
+}
+
+.heading {
+  font-size: 2rem;
+}
+
+.statement {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}

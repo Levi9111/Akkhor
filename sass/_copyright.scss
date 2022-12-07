@@ -1,0 +1,14 @@
+.copyright {
+  grid-column: 2/-1;
+  grid-row: 7/-1;
+  padding: 2rem $container-padding;
+  font-size: 1.6rem;
+  color: $color-grey-light-2;
+  font-weight: 500;
+  &--claim {
+    &-link {
+      text-decoration: none;
+      color: $color-text;
+    }
+  }
+}
